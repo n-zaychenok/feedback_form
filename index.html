@@ -10,14 +10,11 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <form action="https://60376bfd5435040017722533.mockapi.io/formRej" method="post">
+        <form action="https://60376bfd5435040017722533.mockapi.io/form" method="post">
             <h1 class="form-heading">Задать вопрос</h1>
-            <input type="text" id="name" name="name" placeholder="Фамилия Имя Отчество *">
-            
-            <input type="tel" id="tel" name="tel" placeholder="Телефон *" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
-            
-            <input type="email" id="email" name="email" placeholder="Email">
-            
+            <input type="text" id="name" name="name" placeholder="Фамилия Имя Отчество *" pattern="([А-ЯЁ][а-яё]+[\-\s]?){3,}">
+            <input type="tel" id="tel" name="tel" placeholder="Телефон *" pattern="\+?\d+([\(\s\-]?\d+[\)\s\-]?[\d\s\-]+)?">
+            <input type="email" id="email" name="email" placeholder="Email" pattern="[a-zA-Z1-9\-\._]+@[a-z1-9]+(.[a-z1-9]+){1,}">
             <input type="submit" value="ОТПРАВИТЬ ЗАПРОС">
         </form>         
     </body>
